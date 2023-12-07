@@ -1,0 +1,24 @@
+.eventos {
+    margin: 0 auto;
+    width: 1024px;
+    max-width: 100%;
+
+    h2 {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    &__lista {
+        
+        &__link {
+            display: flex;
+            gap: 5%;
+            
+            .item {
+                text-align: center;
+
+            }
+        }
+
+    }
+}

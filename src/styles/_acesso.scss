@@ -1,0 +1,21 @@
+.acesso {
+    margin: 0 auto;
+    width: 1024px;
+    max-width: 100%;
+
+    &__lista {
+        h2 {
+            text-align: center;
+            margin: 24px 0;
+        }
+
+        &__link {   
+            display: flex;
+            gap: 5%;
+
+            &__item {
+                list-style: none;
+            }
+        }
+    }
+}
