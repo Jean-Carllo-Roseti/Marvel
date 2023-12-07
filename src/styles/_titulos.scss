@@ -1,0 +1,45 @@
+.titulos {
+    margin: 0 auto;
+    width: 1024px;
+    max-width: 100%;
+
+    .temas {
+    
+        h2 {
+            text-align: center;
+            margin: 10px;
+        }
+    
+        &__link {
+            text-align: center;
+            list-style: none;
+            margin-bottom: 16px;
+    
+    
+            &__buttons{
+                margin: 10px ;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__opcoes {
+        
+        &__link {
+            gap: 24px;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            &__item {
+
+                .item__img{
+                    border-radius: 16px;
+                }
+            }
+        }
+}
+}
+
+
+
