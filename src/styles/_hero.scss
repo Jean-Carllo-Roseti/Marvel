@@ -1,12 +1,21 @@
 .hero {
-    width: 1024px;
-    max-width: 100%;
     
+    background-color: red;
 
-    &__titulo {
-
+    &__container {
+        width: 1024px;
+        max-width: 100%;
+        margin: 0 auto;
+        
     }
-    &__slogan {
 
+    &__title {
+        padding-top: 30vw;
+        text-align: center;
+    }
+
+    &__slogan {
+        text-align: center;
+        font-size: 16px;
     }
 }
