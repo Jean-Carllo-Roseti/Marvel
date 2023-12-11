@@ -1,23 +1,34 @@
 
 .produtos {
-    &__variaveis{
-        background-image: url(https://via.placeholder.com/900x500);
-        padding-bottom: 16px;
-    }
-}
-.serviços {
+    
     margin: 0 auto;
     width: 1024px;
     max-width: 100%;
+    padding-bottom: 16px;
+    
+}
 
-    &__links {
+.serviços {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__imagem {
+//mt trabalho para fazer manualmente, preciso pensar como alinhar de maneira mais rapida.
+        width: 500px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+&__links {
         list-style: none;
         display: flex;
 
 
         &__item{
             text-align: center;
-            width: 300px;
+            width: 200px;
             max-width: 100%;
             margin: 16px;
 
@@ -35,6 +46,11 @@
                 padding: 4px  16px;
                 border-radius: 8px;
                 text-transform: uppercase;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: lighten(green, 10%)
+                }
             }
 
             img {

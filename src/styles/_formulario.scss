@@ -1,0 +1,52 @@
+.formulario {
+    
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h2 {
+        margin: 20px 0 10px 0;
+        text-align: center;
+    }
+
+    &__pesquisa {
+        text-align: center;
+
+    }
+    
+    .label {
+        display: block;
+        padding: 8px;
+        margin: 5px 0;
+        
+    }
+    
+    .input {
+        text-align: center;
+        width: 90%;
+        max-width: 100%;
+        padding: 8px;
+        border-radius: 16px;
+        border: none;
+        border-bottom: solid 2px green;
+        
+    }
+}
+
+    .botao {
+        color: white;
+        background-color: green;
+        margin: 16px  0 ;
+        padding: 16px;
+        width: 50%;
+        max-width: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: none;
+        border-radius: 16px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: lighten(green, 10%);
+        }
+    }   

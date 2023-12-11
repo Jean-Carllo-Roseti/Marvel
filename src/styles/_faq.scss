@@ -1,0 +1,22 @@
+.faq {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        margin: 32px 0 16px 0;
+    }
+
+    &__accordion {
+
+        .pergunta, 
+        .resposta  {
+            background-color: yellow;
+            margin: 8px;
+            padding: 16px;
+            border-radius: 16px;
+        }
+
+    }
+}
