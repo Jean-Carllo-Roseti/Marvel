@@ -24,7 +24,20 @@
     }
 }
 
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
 body {
+    font-family: Avenir, sans-serif;
     background-color: variaveis.$corFundo;
 }
 
@@ -36,6 +49,7 @@ body {
 }
 
 .titulo {
+
     font-size: 24px;
     margin-bottom: 24px;
     color: #fff;
