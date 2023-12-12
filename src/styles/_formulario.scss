@@ -1,12 +1,23 @@
+@use 'variaveis';
+
 .formulario {
-    
+    padding: 36px 0;
     width: 1024px;
     max-width: 100%;
     margin: 0 auto;
 
     h2 {
+        color: #fff;
         margin: 20px 0 10px 0;
         text-align: center;
+    }
+
+    h3 {
+        color: variaveis.$subTitulos;
+    }
+
+    p {
+        color: variaveis.$subTitulos;
     }
 
     &__pesquisa {
@@ -15,6 +26,7 @@
     }
     
     .label {
+        color: variaveis.$subTitulos;
         display: block;
         padding: 8px;
         margin: 5px 0;
@@ -23,20 +35,19 @@
     
     .input {
         text-align: center;
-        width: 90%;
+        width: 100%;
         max-width: 100%;
         padding: 8px;
         border-radius: 16px;
-        border: none;
-        border-bottom: solid 2px green;
         
     }
 }
 
     .botao {
-        color: white;
-        background-color: green;
-        margin: 16px  0 ;
+        font-weight: bold;
+        color: variaveis.$subTitulos;
+        background-color: variaveis.$corButton;
+        margin-top: 28px;
         padding: 16px;
         width: 50%;
         max-width: 100%;
@@ -45,8 +56,8 @@
         border: none;
         border-radius: 16px;
         text-transform: uppercase;
-
+        
         &:hover {
-            background-color: lighten(green, 10%);
+            background-color: darken(variaveis.$corButton, 20%);
         }
     }   

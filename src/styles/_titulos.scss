@@ -1,11 +1,15 @@
+@use 'variaveis';
+
 .titulos {
     margin: 0 auto;
     width: 1024px;
     max-width: 100%;
+    padding: 36px 0;
 
     .temas {
     
         h2 {
+            color: #fff;
             text-align: center;
             margin: 10px;
         }
@@ -19,6 +23,11 @@
             &__buttons{
                 margin: 10px ;
                 text-decoration: none;
+                color: variaveis.$subTitulos;
+
+                &:hover {
+                    color: darken($color: variaveis.$subTitulos, $amount: 30)
+                }
             }
         }
     }

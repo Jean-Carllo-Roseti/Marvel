@@ -1,9 +1,13 @@
+@use 'variaveis';
+
 .eventos {
     margin: 0 auto;
     width: 1024px;
     max-width: 100%;
+    padding: 36px 0;
 
     h2 {
+        color: #fff;
         margin: 10px;
         text-align: center;
     }
@@ -16,9 +20,17 @@
             
             .item {
                 text-align: center;
+                padding: 4px;
+                margin-top: 4px;
 
+                a {
+                    color: variaveis.$subTitulos;
+
+                    &:hover {
+                        color: darken($color: variaveis.$subTitulos, $amount: 30)
+                    }
+                }
             }
         }
-
     }
 }

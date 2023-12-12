@@ -1,10 +1,14 @@
+@use 'variaveis';
+
 .acesso {
     margin: 0 auto;
     width: 1024px;
     max-width: 100%;
+    padding: 36px 0;
 
     &__lista {
-        h2 {
+        h2 {               
+            color: variaveis.$subTitulos;
             text-align: center;
             margin: 24px 0;
         }
@@ -18,4 +22,24 @@
             }
         }
     }
+}
+
+.item {
+
+    img {
+        border-radius: 16px;
+    }
+    
+    text-align: center;
+    text-align: center;
+    padding: 4px;
+    margin-top: 4px;
+    
+    a {
+        color: variaveis.$subTitulos;
+        &:hover {
+            color: darken($color: variaveis.$subTitulos, $amount: 30)
+        }
+    }
+
 }

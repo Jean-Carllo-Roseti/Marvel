@@ -1,45 +1,9 @@
-
+@use 'variaveis';
 
 .hero {
         background-image: url(https://m.media-amazon.com/images/I/815RdazkJ5L._AC_UF1000,1000_QL80_.jpg);
     padding-bottom: 50px;
-
-    &__container {
-        width: 1024px;
-        max-width: 100%;
-        margin: 0 auto;
-        
-    }
-
-    &__title {
-        padding-top: 30vw;
-        text-align: center;
-    }
-
-    &__slogan {
-        text-align: center;
-        font-size: 16px;
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        &__button {
-            
-            text-align: center;
-            padding: 2px;
-            font-size: 16px;
-            color: white;
-            text-decoration:none ;
-            background-color: green;
-            padding: 4px  16px;
-            border-radius: 8px;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: lighten(green, 10%)
-            }
-        }
-    }
+    padding: 500px 0;
 }
+
+

@@ -1,11 +1,17 @@
+@use 'variaveis';
 
 .produtos {
     
     margin: 0 auto;
     width: 1024px;
     max-width: 100%;
-    padding-bottom: 16px;
+    padding: 36px 0;
     
+
+    &__intro {
+        text-align: center;
+        color: #fff;
+    }
 }
 
 .serviços {
@@ -34,6 +40,7 @@
 
             p {
                 margin-bottom: 20px;
+                color: #fff;
             }
 
             a { //mix diferente para buttons headres e outros.
@@ -42,20 +49,19 @@
                 font-size: 16px;
                 color: white;
                 text-decoration:none ;
-                background-color: green;
+                background-color: variaveis.$corButton;
                 padding: 4px  16px;
                 border-radius: 8px;
                 text-transform: uppercase;
                 transition: background-color 0.3s ease;
-
+                
                 &:hover {
-                    background-color: lighten(green, 10%)
+                    background-color: darken(variaveis.$corButton, 20%);
                 }
             }
 
             img {
                 margin: 50px 0 10px  ;
-                border: solid 2px red;
             }
         }
     }

@@ -9,9 +9,10 @@
 @use 'eventos';
 @use 'qualquer';
 @use 'faq';
+@use 'footer';
 
 
 body {
-    background-color: rgb(12, 237, 237);
+    background-color: variaveis.$corFundo;
 }
 
