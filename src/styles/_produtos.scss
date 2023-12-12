@@ -1,13 +1,7 @@
 @use 'variaveis';
 
-.produtos {
-    
-    margin: 0 auto;
-    width: 1024px;
-    max-width: 100%;
-    padding: 36px 0;
-    
 
+.produtos {
     &__intro {
         text-align: center;
         color: #fff;
@@ -41,23 +35,6 @@
             p {
                 margin-bottom: 20px;
                 color: #fff;
-            }
-
-            a { //mix diferente para buttons headres e outros.
-                text-align: center;
-                padding: 2px;
-                font-size: 16px;
-                color: white;
-                text-decoration:none ;
-                background-color: variaveis.$corButton;
-                padding: 4px  16px;
-                border-radius: 8px;
-                text-transform: uppercase;
-                transition: background-color 0.3s ease;
-                
-                &:hover {
-                    background-color: darken(variaveis.$corButton, 20%);
-                }
             }
 
             img {

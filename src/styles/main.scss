@@ -7,12 +7,62 @@
 @use 'titulos';
 @use 'acesso';
 @use 'eventos';
-@use 'qualquer';
 @use 'faq';
 @use 'footer';
 
 
+@mixin button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: variaveis.$corButton;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: darken(variaveis.$corButton, 20%);
+    }
+}
+
 body {
     background-color: variaveis.$corFundo;
 }
+
+.container {
+    padding: 36px 0;
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 24px ;
+}
+
+.button--Header {
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    @include button;
+}
+
+.button--A { //mix diferente para buttons headres e outros.
+    text-align: center;
+    padding: 4px  16px;
+    border-radius: 8px;
+    @include button;
+}
+
+.button--F {//formulario
+    margin-top: 28px;
+    width: 50%;
+    max-width: 100%;
+    cursor: pointer;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    @include button;
+}   
 

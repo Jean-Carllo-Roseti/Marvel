@@ -1,25 +1,17 @@
 @use 'variaveis';
 
 .footer {
-    padding: 36px 0;
-    width: 1024px;
-    max-width: 100%;
-    margin: 0 auto;
-    
-    &__container {
         
-        &__list {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 24px;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 24px;
 
-            &__item {
-                color: green;
-            }
+        &__item {
+            color: green;
         }
-
-
     }
+
 
     &__button {
 

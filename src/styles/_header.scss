@@ -37,16 +37,3 @@
     }
 }
 
-.buttonA {
-
-    font-size: 24px;
-    color: white;
-    text-decoration:none ;
-    background-color: variaveis.$corButton;
-    padding: 4px  16px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    &:hover {
-        background-color: darken(variaveis.$corButton, 20%);
-    }
-}

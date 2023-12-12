@@ -1,14 +1,10 @@
 @use 'variaveis';
 
 .acesso {
-    margin: 0 auto;
-    width: 1024px;
-    max-width: 100%;
-    padding: 36px 0;
 
     &__lista {
         h2 {               
-            color: variaveis.$subTitulos;
+            color: #fff;
             text-align: center;
             margin: 24px 0;
         }
