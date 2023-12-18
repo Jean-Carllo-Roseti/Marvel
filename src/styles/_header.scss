@@ -3,7 +3,24 @@
 
 
 .header {
-    background-color: #fff;
+    background-color: variaveis.$corFundo;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+
+
+    &--is--hidden {
+        background-color: transparent;
+        transition: background-color .5s ease;
+
+        .header__container__logo,
+        .header__links__item:first-child {
+            transition: opacity .5s ease;
+            opacity: 0; 
+            visibility: hidden;
+        }
+    }
 
     &__container {
         display: flex;
@@ -15,21 +32,22 @@
 
 
         &__logo {
+            margin-top: 16px;
             width: 80px;
             border-radius: 50%;
+            transition: opacity .5s ease;
         }
     }
 
     &__links {
-
         display: flex;
         justify-content: space-between;
         list-style: none;
 
         :nth-child(2) {
+            opacity: .6;
             margin: 0 60px;
         }
-
     }
 }
 

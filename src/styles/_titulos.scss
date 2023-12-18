@@ -13,6 +13,14 @@
                 margin: 10px ;
                 text-decoration: none;
                 color: variaveis.$subTitulos;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+                font-size: 18px;
+
+                &--is--active {
+                    border-bottom: solid 4px #000;
+                }
 
                 &:hover {
                     color: darken($color: variaveis.$subTitulos, $amount: 30)
@@ -26,12 +34,19 @@
         &__link {
             gap: 60px;
             list-style: none;
-            display: grid;
+            display: none;
             grid-template-columns: 1fr 1fr 1fr;
+
+            &--is--active {
+                display: grid;
+            }
             
             &__item {
 
-                .item__img{
+                .item__img {
+                    width: 300px;
+                    height: 300px;
+                    max-width: 100%;
                     border-radius: 16px;
                 }
             }
@@ -39,5 +54,24 @@
     }
 }
 
+@media (max-width:768px) {
+    .titulos__opcoes {
+        gap: 5%;
+        max-width: 484px;
+        width: 100%;
+        margin: 0 auto;
 
+        &__link {
+            grid-template-columns: 1fr 1fr;
+                        
+            &__item {
 
+                .item__img {
+                    width: 300px;
+                    max-width: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+}

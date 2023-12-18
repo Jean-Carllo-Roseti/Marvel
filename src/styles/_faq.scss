@@ -2,16 +2,60 @@
 
 .faq {
 
+    &__questions {
 
-
-    &__accordion {
-
-        .pergunta, 
-        .resposta  {
-            background-color: #fff;
-            margin: 8px 0;
-            padding: 16px;
+        &__item {
+            background-color: variaveis.$accordionBd;
+            margin: 16px 0;
             border-radius: 16px;
+
+            &__question {
+                position: relative;
+                padding: 18px;
+                cursor: pointer;
+
+                &:after {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            &__answer {
+                height: 0;
+                overflow: hidden;
+                padding: 0 18px;
+                transition: height, .5s ease;
+            }
+    
+            &--is--open {
+                
+                .faq__questions__item__question:after {
+                    content: '-';
+                    font-size: 60px;
+                }
+
+                .faq__questions__item__answer {
+                    height: auto;
+                    padding: 18px;
+                    transition: height, .5s ease;
+                }
+            }
         }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .faq__questions__item {
+        margin: 18px auto;
+        max-width: 500px;
+        width: 100%;
     }
 }

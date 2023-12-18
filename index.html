@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./dist/styles/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header header--is--hidden">
         <div class="header__container">
             <h1>
                 <img  class="header__container__logo" src="./src/images/logoSite/13034.jpg" alt="">
                 </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button--Header" >home</a> 
+                    <a href="#" class="button--Header" >Assine agora</a> 
                 </li>
                 <li class="header__links__item">
                     <a href="#" class="button--Header" >login</a> 
@@ -35,14 +35,14 @@
             <div class="serviços">
                 <ul class="serviços__links ">
                     <li class="serviços__links__item">
-                        <img src="https://via.placeholder.com/200x200" alt="">
+                        <img class="img__prod" src="https://via.placeholder.com/200x200" alt="">
                         <p class="discricao">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, tempore.
                         </p>
                         <a href="#" class="button--A" >Saiba mais</a>
                     </li>
                     <li class="serviços__links__item">
-                        <img src="https://via.placeholder.com/200x200" alt="">
+                        <img class="img__prod" src="https://via.placeholder.com/200x200" alt="">
                         <p class="discricao">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, tempore.
                         </p>
@@ -59,39 +59,97 @@
         <ul class="temas">
             <h2 class="titulo">Títulos</h2>
             <li class="temas__link">    
-                <a href="#" class="temas__link__buttons">Wolverine</a>
-                <a href="#" class="temas__link__buttons">Wolverine</a>
-                <a href="#" class="temas__link__buttons">Wolverine</a>
+                <button data-tab-button="x-mens" class="temas__link__buttons temas__link__buttons--is--active">X-mens</button>
+                <button data-tab-button="avengers" class="temas__link__buttons">Avengers</button>
+                <button data-tab-button="outros" class="temas__link__buttons">Outros</button>
             </li>
         </ul>
         <div class=" titulos__opcoes" >
-            <ul class="titulos__opcoes__link" >
+            <ul data-tab-id="x-mens" class="titulos__opcoes__link titulos__opcoes__link--is--active" >
                 <li class="titulos__opcoes__link__item">
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img  class="item__img" src="./src/images/x-mens/avengers-vs-x-men.jpg" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/capa.webp" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/ci_gelo.webp" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/Fas-de-X-Men-reagem-a-morte-da-Marvel.png" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/geral_wolv.png" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/x-23.jpg" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/X-Men-1-featured.webp" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/x-men-37.jpg" alt="">
                 </li>
                 <li class="titulos__opcoes__link__item" >
-                    <img class="item__img" src="https://via.placeholder.com/300x300" alt="">
+                    <img class="item__img" src="./src/images/x-mens/x-men_hero.jpg" alt="">
+                </li>
+            </ul>
+            <ul data-tab-id="avengers" class="titulos__opcoes__link titulos__opcoes__link" >
+                <li class="titulos__opcoes__link__item">
+                    <img  class="item__img" src="./src/images/avengers/black_cap.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/classico.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/gaviao.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/invasion.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/rino.png" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/she hulk.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/the new evil.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/the_beast.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/avengers/visao.jpg" alt="">
+                </li>
+            </ul>
+            <ul data-tab-id="outros" class="titulos__opcoes__link titulos__opcoes__link" >
+                <li class="titulos__opcoes__link__item">
+                    <img  class="item__img" src="./src/images/outros/falcao.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/hulk.webp" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/motoqueiro.png" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/nebulosa.png" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/20230126-image-12-668x1024.webp" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/galaxia.webp" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/20230126-image-12-668x1024.webp" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src= "./src/images/outros/33222dd9b7fba4b35465e256c61f8b89.jpg" alt="">
+                </li>
+                <li class="titulos__opcoes__link__item" >
+                    <img class="item__img" src="./src/images/outros/81+KBn2bfxL._AC_UF1000,1000_QL80_.jpg" alt="">
                 </li>
             </ul>
         </div>
@@ -103,31 +161,29 @@
                 <li>
                     <ul>
                         <li class="item">
-                            <img src="https://via.placeholder.com/300x300" alt="">
+                            <img src="./src/images/outros/smarth fone.webp" alt="">
                         </li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
+                        <li class="item"><a href="#">androids</a></li>
+                        <li class="item"><a href="#">iOS</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul>
                         <li class="item">
-                            <img src="https://via.placeholder.com/300x300" alt="">
+                            <img src="./src/images/outros/noote.webp" alt="">
                         </li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
+                        <li class="item"><a href="#">computador</a></li>
+                        <li class="item"><a href="#">notebook</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul>
                         <li class="item">
-                            <img src="https://via.placeholder.com/300x300" alt="">
+                            <img src="./src/images/outros/game.jpg" alt="">
                         </li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
-                        <li class="item"><a href="#">duasudhasdhu</a></li>
+                        <li class="item"><a href="#">playstation</a></li>
+                        <li class="item"><a href="#">x-Box</a></li>
+                        <li class="item"><a href="#">Nnitendo</a></li>
                     </ul>
                 </li>
             </ul>
@@ -140,25 +196,25 @@
             <ul class="eventos__lista__link">
                 <li>
                     <ul>
-                        <li class="item"><img src="https://via.placeholder.com/300x300" alt=""></li>
-                        <li class="item"><a href="#">asdasdasd</a></li>
-                        <li class="item"><a href="#">asdasdasd</a></li>
-                        <li class="item"><a href="#">asdasdasd</a></li>
+                        <li class="item"><img src="./src/images/outros/produtos.jpg" alt=""></li>
+                        <li class="item"><a href="#">Produtos</a></li>
+                        <li class="item"><a href="#">Serviços</a></li>
+                        <li class="item"><a href="#">Excurções</a></li>
                     </ul>
                     <li>
                         <ul>
-                            <li class="item"><img src="https://via.placeholder.com/300x300" alt=""></li>
-                            <li class="item"><a href="#">asdasdasd</a></li>
-                            <li class="item"><a href="#">asdasdasd</a></li>
-                            <li class="item"><a href="#">asdasdasd</a></li>
+                            <li class="item"><img src="./src/images/outros/cosplay.jpg" alt=""></li>
+                            <li class="item"><a href="#">Convenções</a></li>
+                            <li class="item"><a href="#">Cinemas</a></li>
+                            <li class="item"><a href="#">Cosplays</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li class="item"><img src="https://via.placeholder.com/300x300" alt=""></li>
-                            <li class="item"><a href="#">asdasdasd</a></li>
-                            <li class="item"><a href="#">asdasdasd</a></li>
-                            <li class="item"><a href="#">asdasdasd</a></li>
+                            <li class="item"><img src="./src/images/outros/leilao-1-1.webp" alt=""></li>
+                            <li class="item"><a href="#">Leilões</a></li>
+                            <li class="item"><a href="#">Resgates</a></li>
+                            <li class="item"><a href="#">Encomendas</a></li>
                         </ul>
                     </li>
                 </li>
@@ -185,14 +241,32 @@
     </section>
     <section class="faq container">
         <h2 class="titulo">Perguntas </h2>
-        <div class="faq__accordion">
-            <div class="pergunta">
-                <p>pergunta 11</p>
-            </div>
-            <div class="resposta">
-                <p>respsta 1111</p>
-            </div>
-        </div>
+            <ul class="faq__questions">
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        pergunta1
+                    </div>
+                    <div class="faq__questions__item__answer">
+                        resposta1
+                    </div>
+                </li>
+                <li class="faq__questions__item  faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        pergunta2
+                    </div>
+                    <div class="faq__questions__item__answer">
+                        resposta2
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        pergunta3
+                    </div>
+                    <div class="faq__questions__item__answer">
+                        resposta3
+                    </div>
+                </li>
+            </ul>
     </section>
     <footer class="footer container">
         <div class="footer">
@@ -215,5 +289,6 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, labore officiis voluptatum laborum, adipisci beatae fugiat facere optio, animi repudiandae non ipsum! Reprehenderit deserunt totam eius voluptatum nihil ea vel.</p>
         </div>
     </footer>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

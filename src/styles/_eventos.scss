@@ -24,3 +24,18 @@
         }
     }
 }
+
+
+@media (max-width:768px) {
+    .eventos__lista {
+        max-width: 484px;
+        width: 100%;
+        margin: 0 auto;
+        
+        &__link{
+            display: block;
+        }
+    }
+
+
+}

@@ -43,3 +43,21 @@
         }
     }
 }
+
+@media (max-width: 769px) {
+    .serviços {
+        display: block;
+
+        &__links {
+            display: block;
+            
+            &__item {
+                max-width: 500px;
+                width:100%;
+                .img__prod {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
