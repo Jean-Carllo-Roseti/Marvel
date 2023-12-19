@@ -1,6 +1,7 @@
 @use 'variaveis';
 
 .hero {
+    //background-image: url(../images/x-mens/ci_gelo.webp); n consigo incluir as img em background img
 
     &__container {
         text-align: center;
@@ -10,9 +11,7 @@
         margin-top: -90px;
         
         .capa{
-
             width: 100%;
-
         }
     }
 }
