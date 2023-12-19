@@ -15,9 +15,11 @@
     
     &__imagem {
 //mt trabalho para fazer manualmente, preciso pensar como alinhar de maneira mais rapida.
-        width: 500px;
+
+        height: 310px;
         max-width: 100%;
-        margin: 24px auto;
+        margin: 20px 0 auto;
+
         margin-top: 50px;
     }
 
@@ -32,6 +34,13 @@
             max-width: 100%;
             margin: 16px;
 
+            .img__prod {
+                width: 300px;
+                max-width: 100%;
+                border-radius: 6px;
+            }
+
+
             p {
                 margin-bottom: 20px;
                 color: #fff;
@@ -44,20 +53,36 @@
     }
 }
 
-@media (max-width: 769px) {
+.qualquer {
+    margin-top: 12px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
     .serviços {
         display: block;
+
+        &__imagem {
+            max-width: 320px;
+            width: 100%;
+            margin: 50px 0 0 0  auto;
+        }
 
         &__links {
             display: block;
             
             &__item {
-                max-width: 500px;
+                max-width: 340px;
                 width:100%;
                 .img__prod {
-                    width: 400px;
+                    width: 300px;
                 }
             }
         }
     }
+
+    .qualquer { 
+        height: 420px;
+    }
+
 }

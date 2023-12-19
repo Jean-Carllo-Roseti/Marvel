@@ -1,10 +1,24 @@
 @use 'variaveis';
 
 .hero {
-        background-image: url(https://m.media-amazon.com/images/I/815RdazkJ5L._AC_UF1000,1000_QL80_.jpg);
-    padding-bottom: 50px;
-    padding: 500px 0;
-    margin-bottom: 36px;
+
+    &__container {
+        text-align: center;
+        margin-top: -90px;
+        
+        &__container {
+            width: 100%
+        }
+    }
 }
 
-
+@media (max-width: 668px) {
+    .hero {
+        &__container {
+            img {
+                max-width: 370px;
+                width: 100%;
+            }
+        }
+    }
+}

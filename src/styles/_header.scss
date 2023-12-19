@@ -3,7 +3,7 @@
 
 
 .header {
-    background-color: variaveis.$corFundo;
+    background-color: #fff;
     position: sticky;
     top: 0;
     left: 0;
@@ -13,7 +13,6 @@
     &--is--hidden {
         background-color: transparent;
         transition: background-color .5s ease;
-
         .header__container__logo,
         .header__links__item:first-child {
             transition: opacity .5s ease;
@@ -30,11 +29,14 @@
         width: 1024px;
         max-width: 100%;
 
+        @media (max-width: 768px) {
+            margin-left: 25px;
+        }
+
 
         &__logo {
             margin-top: 16px;
             width: 80px;
-            border-radius: 50%;
             transition: opacity .5s ease;
         }
     }

@@ -8,6 +8,10 @@
             display: flex;
             gap: 5%;
 
+            h3 {
+                color: variaveis.$subTitulos;
+            }
+
             &__item {
                 list-style: none;
             }
@@ -36,8 +40,9 @@
             color: darken($color: variaveis.$subTitulos, $amount: 30)
         }
     }
-
 }
+
+
 
 @media (max-width:768px) {
     

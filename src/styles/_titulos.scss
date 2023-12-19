@@ -55,21 +55,30 @@
 }
 
 @media (max-width:768px) {
-    .titulos__opcoes {
-        gap: 5%;
-        max-width: 484px;
-        width: 100%;
-        margin: 0 auto;
 
-        &__link {
-            grid-template-columns: 1fr 1fr;
-                        
-            &__item {
+.titulos {
 
-                .item__img {
-                    width: 300px;
-                    max-width: 100%;
-                    border-radius: 16px;
+    .titulo {
+        margin-top: 80px;
+    }
+
+        &__opcoes {
+            max-width: 340px;
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 120px;
+
+            &__link {
+                grid-template-columns: 1fr 1fr;
+                gap: 5%;
+                &__item {
+
+                    .item__img {
+                        height: 150px;
+                        width: 300px;
+                        max-width: 100%;
+                        border-radius: 16px;
+                    }
                 }
             }
         }
