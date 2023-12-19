@@ -58,14 +58,14 @@
     border-radius: 6px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .serviços {
         display: block;
 
         &__imagem {
             max-width: 320px;
             width: 100%;
-            margin: 50px 0 0 0  auto;
+            margin: 50px auto;
         }
 
         &__links {
@@ -74,6 +74,9 @@
             &__item {
                 max-width: 340px;
                 width:100%;
+                margin: 0 auto;
+
+
                 .img__prod {
                     width: 300px;
                 }
@@ -82,7 +85,38 @@
     }
 
     .qualquer { 
-        height: 420px;
+        width: 320px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1023px){
+
+    .serviços {
+        display: block;
+
+        &__imagem {
+            max-width: 320px;
+            width: 100%;
+            margin: 50px 70px auto;
+        }
+
+        &__links {
+            display: block;
+            
+            &__item {
+                max-width: 340px;
+                width:100%;
+                margin: 16px auto;
+                .img__prod {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .qualquer { 
+        margin: 0 0 80px 100px;
     }
 
 }

@@ -59,3 +59,12 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+
+    .faq__questions__item {
+        margin: 18px auto;
+        max-width: 710px;
+        width: 100%;
+    }
+}

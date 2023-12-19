@@ -54,13 +54,9 @@
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
 .titulos {
-
-    .titulo {
-        margin-top: 80px;
-    }
 
         &__opcoes {
             max-width: 340px;
@@ -84,3 +80,35 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    
+.titulos {
+
+    .titulo {
+        margin-top: 180px;
+    }
+
+        &__opcoes {
+            max-width: 710px;
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 120px;
+
+            &__link {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 5%;
+                &__item {
+
+                    .item__img {
+                        height: 250px;
+                        width: 300px;
+                        border-radius: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+

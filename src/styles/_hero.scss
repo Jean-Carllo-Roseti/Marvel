@@ -5,18 +5,29 @@
     &__container {
         text-align: center;
         margin-top: -90px;
-        
+
         &__container {
+            max-width: 1024px;
             width: 100%
         }
     }
 }
 
-@media (max-width: 668px) {
+@media (max-width: 767px) {
     .hero {
         &__container {
             img {
-                max-width: 370px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .hero {
+        &__container {
+            img {
                 width: 100%;
             }
         }
